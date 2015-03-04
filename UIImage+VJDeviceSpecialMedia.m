@@ -36,12 +36,12 @@ VJDeviceClass VJ_CurrentDeviceClass()
 
 @implementation UIImage (VJDeviceSpecialMedia)
 
-+ (instancetype)imageForDeviceWithName:(NSString *)imageName
++ (instancetype)vj_imageForDeviceWithName:(NSString *)imageName
 {
-    return [UIImage imageForDeviceWithName:imageName type:@"png"];
+    return [UIImage vj_imageForDeviceWithName:imageName type:@"png"];
 }
 
-+ (instancetype)imageForDeviceWithName:(NSString *)imageName type:(NSString *)type
++ (instancetype)vj_imageForDeviceWithName:(NSString *)imageName type:(NSString *)type
 {
     NSString *suffixString;
     switch (VJ_CurrentDeviceClass()) {

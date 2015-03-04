@@ -31,8 +31,8 @@ VJDeviceClass VJ_CurrentDeviceClass();
 @interface UIImage (VJDeviceSpecialMedia)
 
 // imageName without suffix, image's type default is PNG
-+ (instancetype)imageForDeviceWithName:(NSString *)imageName;
++ (instancetype)vj_imageForDeviceWithName:(NSString *)imageName;
 // specify the image's type
-+ (instancetype)imageForDeviceWithName:(NSString *)imageName type:(NSString *)type;
++ (instancetype)vj_imageForDeviceWithName:(NSString *)imageName type:(NSString *)type;
 
 @end
